@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Slide2_DiscoveringGravityView: View {
+    @State private var isImageMoved = false
+    
     var body: some View {
         VStack(spacing: 30) {
             // Title with custom styling
@@ -23,26 +25,35 @@ struct Slide2_DiscoveringGravityView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 20)
             
+            Spacer()
+            
             // Interactive Element Placeholder with better styling
             ZStack {
-                RoundedRectangle(cornerRadius: 25, style: .continuous)
-                    .fill(Color.blue.opacity(0.3)) // Background color of the placeholder
-                    .frame(width: 250, height: 250)
+                Image("o")
+                    .resizable()
+//                    .frame(width: .infinity, height: .infinity)
                 
-                Text("Drag and drop the apple!")
-                    .font(.title2)
-                    .fontWeight(.medium)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
+                Image("Apple")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                    .padding()
+                    .offset(y: isImageMoved ? 200 : 0)
+                    .animation(.easeInOut(duration: 1.0))
+                
+                Spacer()
             }
-            
-            Spacer()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding()
-        .edgesIgnoringSafeArea(.all)
+        .onTapGesture {
+            withAnimation {
+                self.isImageMoved.toggle()
+            }
+        }
+        Spacer()
     }
 }
+
+
 
 #Preview {
     Slide2_DiscoveringGravityView()

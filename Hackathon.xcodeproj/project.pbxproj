@@ -18,6 +18,9 @@
 		EC1F9E822B7685180082DA43 /* Slide5_GravityAndOurLivesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F9E812B7685180082DA43 /* Slide5_GravityAndOurLivesView.swift */; };
 		EC1F9E842B7685A40082DA43 /* Slide6_GravityTriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F9E832B7685A40082DA43 /* Slide6_GravityTriviaView.swift */; };
 		EC1F9E862B7687DA0082DA43 /* SlideShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F9E852B7687DA0082DA43 /* SlideShowView.swift */; };
+		EC1F9E882B76A9020082DA43 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F9E872B76A9020082DA43 /* HomeView.swift */; };
+		EC1F9E8C2B76AA2D0082DA43 /* ScienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F9E8B2B76AA2D0082DA43 /* ScienceView.swift */; };
+		EC1F9E8F2B76AA5B0082DA43 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F9E8E2B76AA5B0082DA43 /* MathView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		EC1F9E812B7685180082DA43 /* Slide5_GravityAndOurLivesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide5_GravityAndOurLivesView.swift; sourceTree = "<group>"; };
 		EC1F9E832B7685A40082DA43 /* Slide6_GravityTriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide6_GravityTriviaView.swift; sourceTree = "<group>"; };
 		EC1F9E852B7687DA0082DA43 /* SlideShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowView.swift; sourceTree = "<group>"; };
+		EC1F9E872B76A9020082DA43 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EC1F9E8B2B76AA2D0082DA43 /* ScienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceView.swift; sourceTree = "<group>"; };
+		EC1F9E8E2B76AA5B0082DA43 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +92,8 @@
 		EC1F9E722B76813B0082DA43 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EC1F9E782B7681670082DA43 /* Lesson_1 */,
+				EC1F9E8A2B76AA100082DA43 /* Science */,
+				EC1F9E892B76AA0A0082DA43 /* Math */,
 				EC1F9E772B7681660082DA43 /* Root */,
 				EC1F9E762B7681650082DA43 /* Home */,
 				EC1F9E752B7681640082DA43 /* Componenets */,
@@ -112,6 +119,7 @@
 		EC1F9E762B7681650082DA43 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EC1F9E872B76A9020082DA43 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -152,6 +160,23 @@
 				EC1F9E852B7687DA0082DA43 /* SlideShowView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EC1F9E892B76AA0A0082DA43 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				EC1F9E8E2B76AA5B0082DA43 /* MathView.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		EC1F9E8A2B76AA100082DA43 /* Science */ = {
+			isa = PBXGroup;
+			children = (
+				EC1F9E782B7681670082DA43 /* Lesson_1 */,
+				EC1F9E8B2B76AA2D0082DA43 /* ScienceView.swift */,
+			);
+			path = Science;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,11 +252,14 @@
 				EC1F9E862B7687DA0082DA43 /* SlideShowView.swift in Sources */,
 				EC1F9E702B767D650082DA43 /* Slide1_IntroductionToGravityView.swift in Sources */,
 				EC1F9E7C2B7683890082DA43 /* Slide2_DiscoveringGravityView.swift in Sources */,
+				EC1F9E882B76A9020082DA43 /* HomeView.swift in Sources */,
 				EC1F9E632B767C250082DA43 /* ContentView.swift in Sources */,
 				EC1F9E612B767C250082DA43 /* HackathonApp.swift in Sources */,
 				EC1F9E802B7684FE0082DA43 /* Slide4_GravityInSpaceView.swift in Sources */,
 				EC1F9E822B7685180082DA43 /* Slide5_GravityAndOurLivesView.swift in Sources */,
 				EC1F9E7E2B7684E50082DA43 /* Slide3_PowerOfGravityView.swift in Sources */,
+				EC1F9E8C2B76AA2D0082DA43 /* ScienceView.swift in Sources */,
+				EC1F9E8F2B76AA5B0082DA43 /* MathView.swift in Sources */,
 				EC1F9E842B7685A40082DA43 /* Slide6_GravityTriviaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
